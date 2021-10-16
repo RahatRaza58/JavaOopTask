@@ -1,24 +1,16 @@
-package rahatraza;
+/*
+  Name    : Md. Rahat Miah Raza
+  ID      : 2012020058
+  Section : B
+  email   : cse_2012020058@lus.ac.bd
+  Date    : 16-10-2021
 
-import java.math.BigInteger;
+ */
+
+package rahatraza;
 
 public interface AdvancedArithmetic {
 
-     default int divisiorSum(int n)
-    {
-        System.out.println("Divisior");
-
-    }
-     default int findFactorial(int n)
-    {
-
-            BigInteger result =BigInteger.ONE;
-            for(int i=1;i<=n;i++)
-            {
-                result=result.multiply(BigInteger.valueOf(i));
-                return result;
-            }
-
-
-    }
+    void divisorSum(int n);
+    void findFactorial(int n);
 }
